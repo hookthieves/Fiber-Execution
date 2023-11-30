@@ -14,7 +14,7 @@ The intention of this project was to discover ways to execute a payload. Usually
 9.  Memcpy - Copies payload into the memory region
 
 ## OPSEC
-Currently this has opsec concerns as VirtualAlloc and Memcpy has been used to tackle the memory mapping issues. To improve on this, the operator must use stealthier techniques to move around this (NTWINAPI etc)
+Currently this has opsec concerns as VirtualAlloc and Memcpy has been used to tackle the memory mapping issues. To improve on this, the operator must use stealthier techniques to move around this. IAT Hiding and Obfuscation techniques like API Hashing or the use of NT WinAPIs might be more opsec safe.
 
 ## Usage
 The operator can change the payload. Please make sure that the RDATA identifier is the same in main.c and resource.h. Also determine that the .ico file is in the correct directly which is listed in resource.rc file
